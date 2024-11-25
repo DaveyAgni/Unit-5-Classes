@@ -1,7 +1,31 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
+public class Car
+{
+    private int drivenDist;
+    private int changeIdt;
 
-//design your Car class
-//write all code for your Car class here
-//test your Car class with the CarRunner
+    public Car(int drivenDist, int changeIdt)
+    {
+        this.drivenDist = drivenDist;
+        this.changeIdt = changeIdt;
+    }
+
+    public boolean timeForOilChange()
+    {
+        if(drivenDist >= changeIdt)
+        {
+            drivenDist = 0;
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public int addMiles(int m)
+    {
+        drivenDist = drivenDist + m;
+        return drivenDist;
+    }
+
+    
+}
