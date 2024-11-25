@@ -7,7 +7,6 @@ public class Rational
     {
         this.numerator = numerator;
         this.denominator = denominator;
-
     }
 
     public int getNumertor()
@@ -38,14 +37,12 @@ public class Rational
 
         numerator = a;
         denominator = b;
-
     }
 
     public void setRational(int s, int d)
     {
         numerator = s;
         denominator = d;
-
     }
 
 }
