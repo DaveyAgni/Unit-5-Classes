@@ -7,6 +7,7 @@ public class Rational
     {
         this.numerator = numerator;
         this.denominator = denominator;
+
     }
 
     public int getNumertor()
@@ -30,17 +31,21 @@ public class Rational
         }
     }
 
-    public int add(Rational n)
+    public void add(Rational n)
     {
-        return ((numerator * (n.getDenominator())) + ((n.getNumertor()) * denominator))/((n.getDenominator()) * denominator);
+        int a = ((numerator * (n.getDenominator())) + ((n.getNumertor()) * denominator));
+        int b = ((n.getDenominator()) * denominator);
+
+        numerator = a;
+        denominator = b;
+
     }
 
-    public void setRational(int n, int d)
+    public void setRational(int s, int d)
     {
-        numerator = n;
+        numerator = s;
         denominator = d;
 
     }
 
-    
 }
